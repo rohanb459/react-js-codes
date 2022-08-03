@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function TextForm(props) {
-  const [text, setText] = useState("Enter the text here right here........");
+  const [text, setText] = useState("");
 
   const handleUpClick = () => {
     console.log("UpperCase was clicked");
@@ -43,7 +43,7 @@ export default function TextForm(props) {
       </div>
 
       <div className="container my-3">
-        <h1>Your Text Summary </h1>
+        <h2>Your Text Summary </h2>
         <p> {text.split(" ").length} words and {text.length} characters</p>
         <p>{0.008 * text.split(" ").length}</p>
 
