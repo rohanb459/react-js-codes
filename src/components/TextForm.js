@@ -7,6 +7,7 @@ export default function TextForm(props) {
     console.log("UpperCase was clicked");
     let newText = text.toUpperCase();
     setText(newText);
+    props.showAlert("Converted to UpperCase", "success");
   };
 
   const handleOnChange = (event) => {
@@ -18,6 +19,7 @@ export default function TextForm(props) {
     console.log("Lowercase is clicked");
     let newText = text.toLowerCase();
     setText(newText);
+    props.showAlert("Converted to LowerCase", "success");
   }
 
   return (
